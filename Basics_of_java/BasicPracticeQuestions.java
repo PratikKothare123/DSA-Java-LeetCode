@@ -24,11 +24,36 @@ public class BasicPracticeQuestions {
         // You have to output the area of the square.
         // (Hint: area of a square = side * side)
 
+        // System.out.print("Enter the Side of Square:");
+        // int side = sc.nextInt();
+        // int area = side * side;
+        // System.out.println("Area Of Square is:" + area);
 
-        System.out.print("Enter the Side of Square:");
-        int side = sc.nextInt();
-        int area = side * side;
-        System.out.println("Area Of Square is:" + area);
+        // Question 3:
+        // Enter the cost of 3 items from the user (using float data type):
+        // a pencil, a pen, and an eraser.
+        // You have to output the total cost of the items as the bill.
+        // (Add-on: You can also try adding 18% GST tax to the bill as an advanced
+        // problem)
+
+        // System.out.print("Pencil:");
+        // float pencil = sc.nextFloat();
+        
+        // System.out.print("Pen:");
+        // float pen = sc.nextFloat();
+
+        // System.out.print("Eraser:");
+        // float eraser = sc.nextFloat();
+
+        // float cost = pen + pencil + eraser;
+        // System.out.println("Total cost of 3 item is:" + cost);
+
+        // float gsttax = cost * 0.18f;
+
+        // System.out.println("Including GST 18 %:"+gsttax);
+        // float TotalBill = gsttax + cost;
+
+        // System.out.println("Final bill (including GSt):"+ TotalBill);
 
     }
 }
