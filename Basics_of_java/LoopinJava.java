@@ -120,34 +120,75 @@ public class LoopinJava {
         // Scanner sc = new Scanner(System.in);
 
         // do{
-        //     System.out.print("Enter a Number: ");
-        //     int num = sc.nextInt();
-        //     if(num%10==0){
-        //         continue;
-        //     }
-        //     System.out.println("Your No was: "+num);
+        // System.out.print("Enter a Number: ");
+        // int num = sc.nextInt();
+        // if(num%10==0){
+        // continue;
+        // }
+        // System.out.println("Your No was: "+num);
         // }while(true);
 
+        // check a Number is A prime Or Not
 
-        //check a Number is A prime Or Not
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter A number: ");
+        // int n = sc.nextInt();
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter A number: ");
-        int n = sc.nextInt();
+        // int i=2;
+        // boolean isPrime = false;
+        // for(i=2;i<(n-1);i++){
+        // if(n%i==0){
+        // isPrime=true;
+        // }
 
-        int i=2;
-        boolean isPrime = false;
-        for(i=2;i<(n-1);i++){
-            if(n%i==0){
-                isPrime=true;
-            }
-            
-        }
-        if(isPrime==false){
-            System.out.println(n+" is prime Number");
-        }else{
-            System.out.println("Not Prime Number");
-        }
+        // }
+        // if(isPrime==false){
+        // System.out.println(n+" is prime Number");
+        // }else{
+        // System.out.println("Not Prime Number");
+        // }
+
+
+        // Print Even And Odd Sum Without using Array of n numbers
+
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter A Value Of N: ");
+        // int n = sc.nextInt();
+        // int evensum = 0;
+        // int oddsum = 0;
+        // for (int i = 0; i < n; i++) {
+        //     // System.out.println("Enter number: ");
+        //     int ele = sc.nextInt();
+        //     if (ele % 2 == 0) {
+        //         evensum += ele;
+        //     } else {
+        //         oddsum += ele;
+        //     }
+
+        // }
+
+        // System.out.println(evensum + " " + oddsum);
+
+        // fizz-buzz interview DSA Question
         
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The Value of N: ");
+        int n = sc.nextInt();
+        int ctr3 =0,ctr5=0;
+        for(int i=1;i<=n;i++){
+            ctr3++;ctr5++;
+            if(ctr3 != 3 && ctr5 != 5){
+                System.out.println(i + " ");
+            }
+            else if(ctr3 == 3){
+                System.out.println("Fizz");
+                ctr3 =0;
+            }
+            if(ctr5 ==5){
+                System.out.println("Buzz");
+                ctr5=0;
+            }
+        }
+
     }
 }
