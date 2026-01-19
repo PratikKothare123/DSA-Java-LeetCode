@@ -45,16 +45,31 @@ public class Patterns1 {
         // 1 2 3 4
         // 1 2 3 4 5
 
-        int i = 1, j = 1;
-        char ch='A';
-        int n = 4;
-        for (i = 1; i <= n; i++) {
-            for (j = 1; j <= i; j++) {
+        // int i = 1, j = 1;
+        // char ch='A';
+        // int n = 4;
+        // for (i = 1; i <= n; i++) {
+        //     for (j = 1; j <= i; j++) {
                 
-                System.out.print( ch);
-                ch  ++;
-            }
-            System.out.println();
+        //         System.out.print( ch);
+        //         ch  ++;
+        //     }
+        //     System.out.println();
+        // }
+
+
+        class Solution {
+    public int singleNumber(int[] nums) {
+        int result = 0;
+    
+        for (int num : nums) {
+            result ^= num;
         }
+        return result;
+    }
+}
+
+
+
     }
 }
