@@ -1,3 +1,5 @@
+//Selection Sort repeatedly finds the smallest element from the unsorted part of the array and places it at the beginning.
+
 package Sorting;
 
 public class selectionSort {
@@ -9,6 +11,7 @@ public class selectionSort {
                 minPos=j;
                }
             }
+            //Swap 
             int temp = arr[minPos];
             arr[minPos]= arr[i];
             arr[i]= temp;
