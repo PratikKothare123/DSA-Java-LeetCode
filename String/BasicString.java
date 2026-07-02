@@ -5,6 +5,24 @@ import java.util.*;
 
 // A String is a sequence of characters.
 public class BasicString {
+
+    public static String toUppercase(String str){
+        StringBuilder sb = new StringBuilder("");
+        char ch = Character.toUpperCase(str.charAt(0));
+        sb.append(ch);
+
+        for(int i=1;i<str.length();i++){
+            if(str.charAt(i)==' ' && i<str.length()-1){
+                sb.append(str.charAt(i));
+
+                i++;
+                sb.append(Character.toUpperCase(str.charAt(i)));
+            }else{
+                sb.append(str.charAt(i));
+            }
+        }
+        return sb.toString();
+    }
     public static void main(String[] args) {
         // Comman Ways to create String
         // 1. String Literal
@@ -85,29 +103,31 @@ public class BasicString {
         // System.out.println("consonentcount: "+consonentcount+" vowelscount:
         // "+vowelscount);
 
-
-        //Count Special Characters
+        // Count Special Characters
 
         // String str = "a!b@12#";
         // int count = 0;
 
         // for (int i = 0; i < str.length(); i++) {
-        //     char ch = str.charAt(i);
-        //     if (!(ch >= 'a' && ch <= 'z') &&
-        //             !(ch >= 'A' && ch <= 'Z') &&
-        //             !(ch >= '0' && ch <= '9')) {
-        //         count++;
-        //     }
+        // char ch = str.charAt(i);
+        // if (!(ch >= 'a' && ch <= 'z') &&
+        // !(ch >= 'A' && ch <= 'Z') &&
+        // !(ch >= '0' && ch <= '9')) {
+        // count++;
+        // }
         // }
         // System.out.println(count);
 
+        // Print Only Digit From String
+        // String s="Kothare234koth";
+        // for(int i=0;i<s.length();i++){
+        // char ch = s.charAt(i);
+        // if(Character.isDigit(ch)){
+        // System.out.print(ch);
+        // }
+        // }
 
-        String s="Kothare234koth";
-        for(int i=0;i<s.length();i++){
-            char ch = s.charAt(i);
-            if(Character.isDigit(ch)){
-                System.out.print(ch);
-            }
-        }
+        String str = "hi, i am pratik";
+        System.out.println(toUppercase(str));
     }
 }
