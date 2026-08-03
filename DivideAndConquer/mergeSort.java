@@ -16,6 +16,7 @@ public class mergeSort {
             return;
         }
         int mid = si + (ei-si)/2; //(si+ei)/2
+        // System.out.println("Mid: " + mid); 
         mergeSorts(arr, si, mid);
         mergeSorts(arr, mid+1, ei);
 
