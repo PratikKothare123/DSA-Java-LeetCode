@@ -50,8 +50,6 @@ public class mergeSort {
         while(j<=ei){
             temp[k++] = arr[j++];
         }
-
-
         //Copy temp to orignal array
 
         for(k=0,i=si;k<temp.length;k++,i++){
