@@ -61,7 +61,6 @@ public class Nqueens {
                 board[i][j] = 'X';
             }
         }
-
         nQueens(board,0);
         
     }
