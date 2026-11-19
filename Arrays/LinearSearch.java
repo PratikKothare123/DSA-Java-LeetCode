@@ -11,7 +11,7 @@ public class LinearSearch {
             arr[i]= sc.nextInt();
         }
 
-        System.out.print("Which element You want to Search: ");
+        System.out.print("which element Search: ");
         int key = sc.nextInt();
 
          for(int i=0;i<n;i++){
